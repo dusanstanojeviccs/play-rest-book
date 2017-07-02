@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 public class BookRepository {
     private List<Book> bookList = new ArrayList<>();
 
+    public int bookId = 0;
+
     public List<Book> findAll() {
         return bookList;
     }
@@ -25,6 +27,7 @@ public class BookRepository {
 
     public void add(Book book) {
         if (!findById(book.getId()).isPresent()) {
+            book.setId(++bookId);
             bookList.add(book);
         }
     }
