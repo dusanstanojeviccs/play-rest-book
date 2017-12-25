@@ -4,6 +4,8 @@ import com.google.inject.Inject;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import models.*;
+import repositories.*;
 
 public class BookController extends Controller {
 
