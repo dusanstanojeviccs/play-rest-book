@@ -1,4 +1,4 @@
-package books;
+package controllers;
 
 import com.google.inject.Inject;
 import play.libs.Json;

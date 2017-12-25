@@ -2,11 +2,11 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /books          books.BookController.findAll()
-GET     /books/:id      books.BookController.findById(id: Integer)
-POST    /books          books.BookController.create()
-PUT     /books/:id      books.BookController.update(id: Integer)
-DELETE  /books/:id      books.BookController.delete(id: Integer)
+GET     /books          controllers.BookController.findAll()
+GET     /books/:id      controllers.BookController.findById(id: Integer)
+POST    /books          controllers.BookController.create()
+PUT     /books/:id      controllers.BookController.update(id: Integer)
+DELETE  /books/:id      controllers.BookController.delete(id: Integer)
 
 
 # Map static resources from the /public folder to the /assets URL path
