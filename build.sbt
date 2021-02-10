@@ -14,5 +14,12 @@ libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.0"
 libraryDependencies += "org.assertj" % "assertj-core" % "3.6.2" % Test
 libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
 
+libraryDependencies ++= Seq(
+  javaJpa,
+  javaJdbc,
+  "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final", // replace by your jpa implementation
+  "mysql" % "mysql-connector-java" % "5.1.41"
+)
+
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
